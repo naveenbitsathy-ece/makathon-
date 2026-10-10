@@ -1,0 +1,384 @@
+#-----------------------------------------------------------
+# Vivado v2020.1 (64-bit)
+# SW Build 2902540 on Wed May 27 19:54:49 MDT 2020
+# IP Build 2902112 on Wed May 27 22:43:36 MDT 2020
+# Start of session at: Fri Sep 25 16:32:40 2026
+# Process ID: 15732
+# Current directory: D:/RISCV_FPGA/picorv32_bootloader/picorv32_bootloader_proj/picorv32_bootloader.runs/synth_1
+# Command line: vivado.exe -log top.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source top.tcl
+# Log file: D:/RISCV_FPGA/picorv32_bootloader/picorv32_bootloader_proj/picorv32_bootloader.runs/synth_1/top.vds
+# Journal file: D:/RISCV_FPGA/picorv32_bootloader/picorv32_bootloader_proj/picorv32_bootloader.runs/synth_1\vivado.jou
+#-----------------------------------------------------------
+source top.tcl -notrace
+create_project: Time (s): cpu = 00:00:03 ; elapsed = 00:00:07 . Memory (MB): peak = 1071.891 ; gain = 0.000
+Command: synth_design -top top -part xc7s50csga324-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7s50'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7s50'
+INFO: [Device 21-403] Loading part xc7s50csga324-1
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 14664
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:07 ; elapsed = 00:00:09 . Memory (MB): peak = 1071.891 ; gain = 0.000
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'top' [D:/RISCV_FPGA/picorv32_bootloader/top.v:22]
+	Parameter ROM_WORDS bound to: 512 - type: integer 
+	Parameter APP_WORDS bound to: 2048 - type: integer 
+	Parameter CLKS_PER_BIT bound to: 868 - type: integer 
+INFO: [Synth 8-3876] $readmem data file 'bootloader.hex' is read successfully [D:/RISCV_FPGA/picorv32_bootloader/top.v:83]
+INFO: [Synth 8-6157] synthesizing module 'picorv32' [D:/RISCV_FPGA/picorv32_bootloader/picorv32.v:62]
+	Parameter ENABLE_COUNTERS bound to: 1'b0 
+	Parameter ENABLE_COUNTERS64 bound to: 1'b1 
+	Parameter ENABLE_REGS_16_31 bound to: 1'b1 
+	Parameter ENABLE_REGS_DUALPORT bound to: 1'b1 
+	Parameter LATCHED_MEM_RDATA bound to: 1'b0 
+	Parameter TWO_STAGE_SHIFT bound to: 1'b1 
+	Parameter BARREL_SHIFTER bound to: 1'b0 
+	Parameter TWO_CYCLE_COMPARE bound to: 1'b0 
+	Parameter TWO_CYCLE_ALU bound to: 1'b0 
+	Parameter COMPRESSED_ISA bound to: 1'b0 
+	Parameter CATCH_MISALIGN bound to: 1'b1 
+	Parameter CATCH_ILLINSN bound to: 1'b1 
+	Parameter ENABLE_PCPI bound to: 1'b0 
+	Parameter ENABLE_MUL bound to: 1'b0 
+	Parameter ENABLE_FAST_MUL bound to: 1'b0 
+	Parameter ENABLE_DIV bound to: 1'b0 
+	Parameter ENABLE_IRQ bound to: 1'b0 
+	Parameter ENABLE_IRQ_QREGS bound to: 1'b1 
+	Parameter ENABLE_IRQ_TIMER bound to: 1'b1 
+	Parameter ENABLE_TRACE bound to: 1'b0 
+	Parameter REGS_INIT_ZERO bound to: 1'b0 
+	Parameter MASKED_IRQ bound to: 0 - type: integer 
+	Parameter LATCHED_IRQ bound to: -1 - type: integer 
+	Parameter PROGADDR_RESET bound to: 0 - type: integer 
+	Parameter PROGADDR_IRQ bound to: 16 - type: integer 
+	Parameter STACKADDR bound to: -1 - type: integer 
+	Parameter irq_timer bound to: 0 - type: integer 
+	Parameter irq_ebreak bound to: 1 - type: integer 
+	Parameter irq_buserror bound to: 2 - type: integer 
+	Parameter irqregs_offset bound to: 32 - type: integer 
+	Parameter regfile_size bound to: 32 - type: integer 
+	Parameter regindex_bits bound to: 5 - type: integer 
+	Parameter WITH_PCPI bound to: 1'b0 
+	Parameter TRACE_BRANCH bound to: 36'b000100000000000000000000000000000000 
+	Parameter TRACE_ADDR bound to: 36'b001000000000000000000000000000000000 
+	Parameter TRACE_IRQ bound to: 36'b100000000000000000000000000000000000 
+	Parameter cpu_state_trap bound to: 8'b10000000 
+	Parameter cpu_state_fetch bound to: 8'b01000000 
+	Parameter cpu_state_ld_rs1 bound to: 8'b00100000 
+	Parameter cpu_state_ld_rs2 bound to: 8'b00010000 
+	Parameter cpu_state_exec bound to: 8'b00001000 
+	Parameter cpu_state_shift bound to: 8'b00000100 
+	Parameter cpu_state_stmem bound to: 8'b00000010 
+	Parameter cpu_state_ldmem bound to: 8'b00000001 
+WARNING: [Synth 8-151] case item 1'b0 is unreachable [D:/RISCV_FPGA/picorv32_bootloader/picorv32.v:1269]
+WARNING: [Synth 8-151] case item 1'b0 is unreachable [D:/RISCV_FPGA/picorv32_bootloader/picorv32.v:1315]
+INFO: [Synth 8-155] case statement is not full and has no default [D:/RISCV_FPGA/picorv32_bootloader/picorv32.v:1315]
+WARNING: [Synth 8-151] case item 1'b0 is unreachable [D:/RISCV_FPGA/picorv32_bootloader/picorv32.v:1498]
+INFO: [Synth 8-155] case statement is not full and has no default [D:/RISCV_FPGA/picorv32_bootloader/picorv32.v:1498]
+WARNING: [Synth 8-151] case item 1'b0 is unreachable [D:/RISCV_FPGA/picorv32_bootloader/picorv32.v:1584]
+WARNING: [Synth 8-151] case item 1'b0 is unreachable [D:/RISCV_FPGA/picorv32_bootloader/picorv32.v:1584]
+WARNING: [Synth 8-151] case item 1'b0 is unreachable [D:/RISCV_FPGA/picorv32_bootloader/picorv32.v:1584]
+WARNING: [Synth 8-151] case item 1'b0 is unreachable [D:/RISCV_FPGA/picorv32_bootloader/picorv32.v:1584]
+WARNING: [Synth 8-151] case item 1'b0 is unreachable [D:/RISCV_FPGA/picorv32_bootloader/picorv32.v:1584]
+WARNING: [Synth 8-151] case item 1'b0 is unreachable [D:/RISCV_FPGA/picorv32_bootloader/picorv32.v:1584]
+INFO: [Synth 8-6155] done synthesizing module 'picorv32' (1#1) [D:/RISCV_FPGA/picorv32_bootloader/picorv32.v:62]
+WARNING: [Synth 8-7071] port 'trap' of module 'picorv32' is unconnected for instance 'cpu' [D:/RISCV_FPGA/picorv32_bootloader/top.v:57]
+WARNING: [Synth 8-7071] port 'mem_la_read' of module 'picorv32' is unconnected for instance 'cpu' [D:/RISCV_FPGA/picorv32_bootloader/top.v:57]
+WARNING: [Synth 8-7071] port 'mem_la_write' of module 'picorv32' is unconnected for instance 'cpu' [D:/RISCV_FPGA/picorv32_bootloader/top.v:57]
+WARNING: [Synth 8-7071] port 'mem_la_addr' of module 'picorv32' is unconnected for instance 'cpu' [D:/RISCV_FPGA/picorv32_bootloader/top.v:57]
+WARNING: [Synth 8-7071] port 'mem_la_wdata' of module 'picorv32' is unconnected for instance 'cpu' [D:/RISCV_FPGA/picorv32_bootloader/top.v:57]
+WARNING: [Synth 8-7071] port 'mem_la_wstrb' of module 'picorv32' is unconnected for instance 'cpu' [D:/RISCV_FPGA/picorv32_bootloader/top.v:57]
+WARNING: [Synth 8-7071] port 'pcpi_valid' of module 'picorv32' is unconnected for instance 'cpu' [D:/RISCV_FPGA/picorv32_bootloader/top.v:57]
+WARNING: [Synth 8-7071] port 'pcpi_insn' of module 'picorv32' is unconnected for instance 'cpu' [D:/RISCV_FPGA/picorv32_bootloader/top.v:57]
+WARNING: [Synth 8-7071] port 'pcpi_rs1' of module 'picorv32' is unconnected for instance 'cpu' [D:/RISCV_FPGA/picorv32_bootloader/top.v:57]
+WARNING: [Synth 8-7071] port 'pcpi_rs2' of module 'picorv32' is unconnected for instance 'cpu' [D:/RISCV_FPGA/picorv32_bootloader/top.v:57]
+WARNING: [Synth 8-7071] port 'pcpi_wr' of module 'picorv32' is unconnected for instance 'cpu' [D:/RISCV_FPGA/picorv32_bootloader/top.v:57]
+WARNING: [Synth 8-7071] port 'pcpi_rd' of module 'picorv32' is unconnected for instance 'cpu' [D:/RISCV_FPGA/picorv32_bootloader/top.v:57]
+WARNING: [Synth 8-7071] port 'pcpi_wait' of module 'picorv32' is unconnected for instance 'cpu' [D:/RISCV_FPGA/picorv32_bootloader/top.v:57]
+WARNING: [Synth 8-7071] port 'pcpi_ready' of module 'picorv32' is unconnected for instance 'cpu' [D:/RISCV_FPGA/picorv32_bootloader/top.v:57]
+WARNING: [Synth 8-7071] port 'eoi' of module 'picorv32' is unconnected for instance 'cpu' [D:/RISCV_FPGA/picorv32_bootloader/top.v:57]
+WARNING: [Synth 8-7071] port 'trace_valid' of module 'picorv32' is unconnected for instance 'cpu' [D:/RISCV_FPGA/picorv32_bootloader/top.v:57]
+WARNING: [Synth 8-7071] port 'trace_data' of module 'picorv32' is unconnected for instance 'cpu' [D:/RISCV_FPGA/picorv32_bootloader/top.v:57]
+WARNING: [Synth 8-7023] instance 'cpu' of module 'picorv32' has 27 connections declared, but only 10 given [D:/RISCV_FPGA/picorv32_bootloader/top.v:57]
+INFO: [Synth 8-6155] done synthesizing module 'top' (2#1) [D:/RISCV_FPGA/picorv32_bootloader/top.v:22]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:10 ; elapsed = 00:00:14 . Memory (MB): peak = 1091.227 ; gain = 19.336
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:11 ; elapsed = 00:00:15 . Memory (MB): peak = 1091.227 ; gain = 19.336
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:11 ; elapsed = 00:00:15 . Memory (MB): peak = 1091.227 ; gain = 19.336
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.067 . Memory (MB): peak = 1091.227 ; gain = 0.000
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [D:/RISCV_FPGA/picorv32_bootloader/boolean_bootloader.xdc]
+Finished Parsing XDC File [D:/RISCV_FPGA/picorv32_bootloader/boolean_bootloader.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [D:/RISCV_FPGA/picorv32_bootloader/boolean_bootloader.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/top_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/top_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1205.641 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.015 . Memory (MB): peak = 1205.641 ; gain = 0.000
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:22 ; elapsed = 00:00:29 . Memory (MB): peak = 1205.641 ; gain = 133.750
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7s50csga324-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:22 ; elapsed = 00:00:29 . Memory (MB): peak = 1205.641 ; gain = 133.750
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:22 ; elapsed = 00:00:29 . Memory (MB): peak = 1205.641 ; gain = 133.750
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:23 ; elapsed = 00:00:30 . Memory (MB): peak = 1205.641 ; gain = 133.750
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input   32 Bit       Adders := 4     
+	   3 Input   32 Bit       Adders := 1     
+	   2 Input   16 Bit       Adders := 2     
+	   2 Input    5 Bit       Adders := 2     
+	   2 Input    4 Bit       Adders := 2     
++---XORs : 
+	   2 Input     32 Bit         XORs := 1     
++---Registers : 
+	               64 Bit    Registers := 1     
+	               36 Bit    Registers := 1     
+	               32 Bit    Registers := 14    
+	               16 Bit    Registers := 3     
+	               10 Bit    Registers := 1     
+	                8 Bit    Registers := 3     
+	                5 Bit    Registers := 6     
+	                4 Bit    Registers := 3     
+	                2 Bit    Registers := 4     
+	                1 Bit    Registers := 80    
++---RAMs : 
+	              64K Bit	(2048 X 32 bit)          RAMs := 1     
+	              16K Bit	(512 X 32 bit)          RAMs := 1     
+	             1024 Bit	(32 X 32 bit)          RAMs := 1     
++---Muxes : 
+	   2 Input   32 Bit        Muxes := 34    
+	   5 Input   32 Bit        Muxes := 3     
+	   6 Input   32 Bit        Muxes := 1     
+	   7 Input   32 Bit        Muxes := 4     
+	   4 Input   32 Bit        Muxes := 9     
+	   9 Input   32 Bit        Muxes := 2     
+	   2 Input   16 Bit        Muxes := 2     
+	   5 Input   16 Bit        Muxes := 1     
+	   2 Input   10 Bit        Muxes := 1     
+	   4 Input    8 Bit        Muxes := 2     
+	   7 Input    8 Bit        Muxes := 1     
+	   9 Input    8 Bit        Muxes := 1     
+	   2 Input    8 Bit        Muxes := 2     
+	   7 Input    5 Bit        Muxes := 1     
+	   2 Input    5 Bit        Muxes := 1     
+	   9 Input    5 Bit        Muxes := 2     
+	   3 Input    4 Bit        Muxes := 1     
+	   5 Input    4 Bit        Muxes := 1     
+	   4 Input    4 Bit        Muxes := 1     
+	   2 Input    4 Bit        Muxes := 1     
+	   2 Input    3 Bit        Muxes := 2     
+	   6 Input    2 Bit        Muxes := 1     
+	   9 Input    2 Bit        Muxes := 1     
+	   9 Input    1 Bit        Muxes := 25    
+	   2 Input    1 Bit        Muxes := 34    
+	   4 Input    1 Bit        Muxes := 11    
+	   7 Input    1 Bit        Muxes := 3     
+	   3 Input    1 Bit        Muxes := 2     
+	   5 Input    1 Bit        Muxes := 1     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 120 (col length:60)
+BRAMs: 150 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6851] RAM (bootrom_reg) has partial Byte Wide Write Enable pattern, however no output register found in fanout of RAM. Recommended to use supported Byte Wide Write Enable template. 
+INFO: [Synth 8-6851] RAM (appram_reg) has partial Byte Wide Write Enable pattern, however no output register found in fanout of RAM. Recommended to use supported Byte Wide Write Enable template. 
+INFO: [Synth 8-6851] RAM (appram_reg) has partial Byte Wide Write Enable pattern, however no output register found in fanout of RAM. Recommended to use supported Byte Wide Write Enable template. 
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:33 ; elapsed = 00:00:41 . Memory (MB): peak = 1205.641 ; gain = 133.750
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Distributed RAM: Preliminary Mapping	Report (see note below)
++------------+-----------------+-----------+----------------------+------------------+
+|Module Name | RTL Object      | Inference | Size (Depth x Width) | Primitives       | 
++------------+-----------------+-----------+----------------------+------------------+
+|top         | cpu/cpuregs_reg | Implied   | 32 x 32              | RAM32M x 12	     | 
+|top         | bootrom_reg     | Implied   | 512 x 32             | RAM256X1S x 64	  | 
+|top         | appram_reg      | Implied   | 2 K x 32             | RAM256X1S x 256	 | 
++------------+-----------------+-----------+----------------------+------------------+
+
+Note: The table above is a preliminary report that shows the Distributed RAMs at the current stage of the synthesis flow. Some Distributed RAMs may be reimplemented as non Distributed RAM primitives later in the synthesis flow. Multiple instantiated RAMs are reported only once.
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:47 ; elapsed = 00:00:55 . Memory (MB): peak = 1205.641 ; gain = 133.750
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:53 ; elapsed = 00:01:02 . Memory (MB): peak = 1253.148 ; gain = 181.258
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Distributed RAM: Final Mapping	Report
++------------+-----------------+-----------+----------------------+------------------+
+|Module Name | RTL Object      | Inference | Size (Depth x Width) | Primitives       | 
++------------+-----------------+-----------+----------------------+------------------+
+|top         | cpu/cpuregs_reg | Implied   | 32 x 32              | RAM32M x 12	     | 
+|top         | bootrom_reg     | Implied   | 512 x 32             | RAM256X1S x 64	  | 
+|top         | appram_reg      | Implied   | 2 K x 32             | RAM256X1S x 256	 | 
++------------+-----------------+-----------+----------------------+------------------+
+
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:55 ; elapsed = 00:01:03 . Memory (MB): peak = 1263.223 ; gain = 191.332
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:01:03 ; elapsed = 00:01:12 . Memory (MB): peak = 1263.223 ; gain = 191.332
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:01:03 ; elapsed = 00:01:12 . Memory (MB): peak = 1263.223 ; gain = 191.332
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:01:04 ; elapsed = 00:01:12 . Memory (MB): peak = 1263.223 ; gain = 191.332
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:01:04 ; elapsed = 00:01:12 . Memory (MB): peak = 1263.223 ; gain = 191.332
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:01:04 ; elapsed = 00:01:12 . Memory (MB): peak = 1263.223 ; gain = 191.332
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:01:04 ; elapsed = 00:01:12 . Memory (MB): peak = 1263.223 ; gain = 191.332
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+----------+------+
+|      |Cell      |Count |
++------+----------+------+
+|1     |BUFG      |     1|
+|2     |CARRY4    |    59|
+|3     |LUT1      |     6|
+|4     |LUT2      |   131|
+|5     |LUT3      |    89|
+|6     |LUT4      |   227|
+|7     |LUT5      |   127|
+|8     |LUT6      |   554|
+|9     |MUXF7     |    30|
+|10    |RAM256X1S |   320|
+|11    |RAM32M    |    12|
+|12    |FDRE      |   554|
+|13    |FDSE      |    51|
+|14    |IBUF      |     3|
+|15    |OBUF      |    17|
++------+----------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:01:04 ; elapsed = 00:01:12 . Memory (MB): peak = 1263.223 ; gain = 191.332
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 0 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:49 ; elapsed = 00:01:05 . Memory (MB): peak = 1263.223 ; gain = 76.918
+Synthesis Optimization Complete : Time (s): cpu = 00:01:04 ; elapsed = 00:01:13 . Memory (MB): peak = 1263.223 ; gain = 191.332
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.052 . Memory (MB): peak = 1269.070 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 421 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 1 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.003 . Memory (MB): peak = 1269.070 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 332 instances were transformed.
+  RAM256X1S => RAM256X1S (MUXF7(x2), MUXF8, RAMS64E(x4)): 320 instances
+  RAM32M => RAM32M (RAMD32(x6), RAMS32(x2)): 12 instances
+
+INFO: [Common 17-83] Releasing license: Synthesis
+25 Infos, 27 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:01:14 ; elapsed = 00:01:34 . Memory (MB): peak = 1269.070 ; gain = 197.180
+INFO: [Common 17-1381] The checkpoint 'D:/RISCV_FPGA/picorv32_bootloader/picorv32_bootloader_proj/picorv32_bootloader.runs/synth_1/top.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file top_utilization_synth.rpt -pb top_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Fri Sep 25 16:34:52 2026...
